@@ -33,7 +33,15 @@ const FeaturesSection = () => {
         </div>
 
         {/* Features boxs */}
-        
+        <div>
+            {features.map((feature, index) =>(
+                <div>
+                    <div className="w-24 h-24 rounded-full mb-6 flex items-center justify-center">
+                        <div key={index} className="text-3xl">{feature.icon}</div>
+                    </div>
+                </div>
+            ))}
+        </div>
 
         {/* Button */}
       </section>
