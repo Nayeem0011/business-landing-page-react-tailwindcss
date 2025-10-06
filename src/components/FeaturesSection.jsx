@@ -33,14 +33,25 @@ const FeaturesSection = () => {
         </div>
 
         {/* Features boxs */}
-        <div>
-            {features.map((feature, index) =>(
-                <div>
-                    <div className="w-24 h-24 rounded-full mb-6 flex items-center justify-center">
-                        <div key={index} className="text-3xl">{feature.icon}</div>
-                    </div>
-                </div>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div className="flex flex-col items-center p-6">
+              <div
+                key={index}
+                className="w-24 h-24 rounded-full mb-6 flex items-center justify-center"
+                style={{
+                  backgroundColor:
+                    index === 0
+                      ? "#F1EFFD"
+                      : index === 1
+                      ? "#FEE7E7"
+                      : "#FFF3E4",
+                }}
+              >
+                <div className="text-3xl">{feature.icon}</div>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Button */}
