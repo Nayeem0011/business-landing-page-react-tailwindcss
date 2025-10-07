@@ -35,7 +35,7 @@ const FeaturesSection = () => {
         {/* Features boxs */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div className="flex flex-col items-center p-6">
+            <div className="flex flex-col text-center items-center p-6">
               <div
                 key={index}
                 className="w-24 h-24 rounded-full mb-6 flex items-center justify-center"
@@ -50,6 +50,9 @@ const FeaturesSection = () => {
               >
                 <div className="text-3xl">{feature.icon}</div>
               </div>
+
+              <h3 className="text-2xl font-medium mb-3">{feature.title}</h3>
+              <p className="text-gray-500 text-center">{feature.description}</p>
             </div>
           ))}
         </div>
