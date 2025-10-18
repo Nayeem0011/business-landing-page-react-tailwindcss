@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import PriceSection from './components/PriceSection'
 import PurposeSection from './components/PurposeSection'
 import ScheduleSection from './components/ScheduleSection'
+import ServicesSection from './components/ServicesSection'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <ScheduleSection/>
           <MonitorSection/>
           <PriceSection/>
+          <ServicesSection/>
         </div>
       </main>
     </>
